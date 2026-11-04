@@ -11,6 +11,7 @@
     "check": "bun run typecheck && bun run test"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "hono": "^4.13.5",
     "parse5": "^8.0.1",
     "undici": "^8.10.1"

@@ -30,6 +30,10 @@ export function renderPage(options: PageOptions): HtmlEscapedString | Promise<Ht
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${options.title}</title>
     <style>${STYLES}</style>
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
     <main>${options.body}</main>
