@@ -11,6 +11,9 @@ export async function renderLandingPage(): Promise<string> {
       <button type="submit">Abrir</button>
     </form>
     <p>También puedes escribir la URL directamente tras la barra: <code>/https:/ejemplo.com/ruta</code> (o simplemente <code>/ejemplo.com/ruta</code>)</p>
+    <p>Examples:</p>
+    <a href="/novelcrafter.com/">Example 1</a>
+    <a href="/sudowrite.com/">Example 2</a>
     <script>
       document.getElementById('go').addEventListener('submit', function (event) {
         var raw = this.elements.url.value.trim();
